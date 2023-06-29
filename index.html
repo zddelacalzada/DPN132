@@ -149,14 +149,14 @@
 					<div class="col-md-3 text-center" style="font-family: PT Sans;">
 						<div class="col-4 col-6-medium col-12-small", div style="margin-bottom: 20px;">
 							<section class="box style1" style="background-color: #F2D0D0; outline: 1px solid rgb(0, 0, 0);">
-								<h3 style="color: black; text-shadow: none;">Missing and/or invalid values</h3>
+								<h3 style="color: black; text-shadow: none; font-family: Sifonn;">Missing and/or invalid values</h3>
 								<p style="color: black; text-shadow: none;">The usual columns that have missing or invalid values are the Location and Bio columns. In order for us to visualize the number of Location and Bio values, missing values will be handled by categorizing them as ‘No Location’ or ‘No Bio’ or ‘No Bio and Location’. Invalid values Tweets with posting dates after 2022 were deleted.</p>
 							</section>
 						</div>
 						<div class="col-4 col-6-medium col-12-small", div style="margin-bottom: 20px;">
 							<section class="box style1" style="background-color: #F2D0D0; outline: 1px solid rgb(0, 0, 0);">
 								
-								<h3 style="color: black; text-shadow: none;">Outliers</h3>
+								<h3 style="color: black; text-shadow: none; font-family: Sifonn;">Outliers</h3>
 								<p style="color: black; text-shadow: none;">Outliers were removed in the dataset using pandas. Z-score standardization was used in order to identify the outliers in each numerical column in the dataset.
 								</p>
 							</section>
@@ -164,22 +164,22 @@
 						<div class="col-4 col-6-medium col-12-small", div style="margin-bottom: 20px;">
 							<section class="box style1" style="background-color: #F2D0D0; outline: 1px solid rgb(0, 0, 0);">
 								
-								<h3 style="color: black; text-shadow: none;">Formatting consistency</h3>
+								<h3 style="color: black; text-shadow: none; font-family: Sifonn;">Formatting consistency</h3>
 								<p style="color: black; text-shadow: none;">Since the data was obtained manually (without a scraper), we ensured to follow the format specified for each column. However, this method is prone to human error. Some methods that we have used to further verify the format of the available data include the conditional formatting function of Google Sheets.</p>
 							</section>
 						</div>
 						<div class="col-4 col-6-medium col-12-small", div style="margin-bottom: 20px;">
 							<section class="box style1" style="background-color: #F2D0D0; outline: 1px solid rgb(0, 0, 0);">
 								
-								<h3 style="color: black; text-shadow: none;">Normalization/standardization/scaling</h3>
-								<p style="color: black; text-shadow: none;">We have mainly used normalization and standardization to identify outliers. Z-score standardization was used as mentioned before.
+								<h3 style="color: black; text-shadow: none; font-family: Sifonn;">Normalization/standardization/scaling</h3>
+								<p style="color: black; text-shadow: none; ">We have mainly used normalization and standardization to identify outliers. Z-score standardization was used as mentioned before.
 								</p>
 							</section>
 						</div>
 						<div class="col-4 col-6-medium col-12-small", div style="margin-bottom: 20px;">
 							<section class="box style1" style="background-color: #F2D0D0; outline: 1px solid rgb(0, 0, 0);">
 								
-								<h3 style="color: black; text-shadow: none;">Categorical data encoding</h3>
+								<h3 style="color: black; text-shadow: none; font-family: Sifonn;">Categorical data encoding</h3>
 								<p style="color: black; text-shadow: none;">Some of the columns that are considered categorical data are the Content type and Account type columns. For the content type column, we have equated 1 for Emotional, 2 for Rational, and 3 for Transaction. On the other hand, we have equated 1 for Identified, 2 for Anonymous, and 3 for Media.
 								</p>
 							</section>
@@ -203,7 +203,7 @@
 								<a href="#" class="image featured"
 								  ><img src="bar.PNG" alt=""
 								/></a>
-								<h3><a href="#">Keyword Frequency</a></h3>
+								<h3 style="font-family: Sifonn; color: black;">Keyword Frequency</h3>
 								<p>The frequency of the occruence of certain keywords related to Leni Robredo and her personal life.</p>
 						  </article>
 					</div>
@@ -216,7 +216,7 @@
 								<a href="#" class="image featured"
 								  ><img src="scatter.PNG" alt=""
 								/></a>
-								<h3><a href="#">Follower-Following Ratio</a></h3>
+								<h3 style="font-family: Sifonn; color: black;">Follower-Following Ratio</h3>
 								<p> A scatterplot relating the number of followers and the accounts followed by a given account.
 								</p>
 						  </article>
@@ -226,7 +226,7 @@
 						  <article class="box style2" style="outline: 1px solid rgb(0, 0, 0);">
 							  <a href="#" class="image featured"
 								  ><img src="heatmap.png" alt=""/></a>
-							  <h3><a href="#">Account type vs Date of posting</a></h3>
+							  <h3 style="font-family: Sifonn; color: black;">Account type vs Date of posting</h3>
 							  <p>Heatmap to determine what account types were common in a given date.</p>
 						  </article>
 				  </div>
@@ -237,7 +237,7 @@
 							<a href="#" class="image featured"
 							  ><img src="line.png" width="200%" alt=""
 							/></a>
-							<h3><a href="#">Number of tweets over time</a></h3>
+							<h3 style="font-family: Sifonn; color: black;">Number of tweets over time</h3>
 							<p> A line graph showing the number of tweets over time.
 							</p>
 							<p>
@@ -253,24 +253,24 @@
 
 
 			<!-- Methods -->
-			<article id="methods" class="wrapper style3">
+			<article id="methods" class="wrapper style3" style="background-color: #DAE5C4; font-family: PT Sans; color: black; text-shadow: none;">
 				<div class="container">
 					<header>
-						<h2>DATA MODELING</h2>
+						<h2 style="font-family: Sifonn; color: black;">DATA MODELING</h2>
 						<p>For this study, we used topic clustering and statistical analysis to evaluate the dataset that we have created and to test the resulting insights against our hypothesis.</p>
 					</header>
 					<div class="row">
 						<div class="col-6 col-6-medium col-12-small">
 							<article class="box style2">
 								<a class="image featured"><img src="ldagraph.png" alt="" /></a>
-								<h3><a href="#">TOPIC CLUSTERING</a></h3>
+								<h3 style="font-family: Sifonn; color: black;">TOPIC CLUSTERING</h3>
 								<p>Ornare nulla proin odio consequat.</p>
 							</article>
 						</div>
 						<div class="col-6 col-6-medium col-12-small">
 							<article class="box style2">
 								<a class="image featured"><img src="distrib.png" alt="" /></a>
-								<h3><a href="#">STATISTICAL MODELING</a></h3>
+								<h3 style="font-family: Sifonn; color: black;">STATISTICAL MODELING</h3>
 								<p>Ornare nulla proin odio consequat.</p>
 							</article>
 						</div>
