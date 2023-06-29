@@ -290,7 +290,29 @@
 							<article class="box style2">
 								<a class="image featured"><img src="distrib.png" alt="" /></a>
 								<h3 style="font-family: Sifonn; color: black;">STATISTICAL MODELING</h3>
-								<p>Ornare nulla proin odio consequat.</p>
+								<p style="text-align: justify;">Due to the subjective nature of the topic, the lack of readily available quantitative data and overall difficulty of finding "unbiased" data, we were unable to employ standard statistical tests, such as t-tests or chi-square tests, which require a standardized level of confidence. Consequently, we opted to utilize Bayesian factor analysis for hypothesis testing, as it allows for the evaluation of subjective evidence in favor of or against a hypothesis based on prior beliefs and observed data.
+									<br>
+								The prior probability for this project is assumed at 0.25. The posterior probability is then calculated by getting the likelihoods of each word by using the formula (likelihood = (1 / math.sqrt(2 * math.pi * sigma**2)) * math.exp(-(x - mu)**2 / (2 * sigma**2))). The Bayesian Factor is then calculated by dividing the posterior probability by the prior probability.
+								<br>
+								Using the Bayesian Factor for hypothesis testing we have the following:
+								<br>
+								Bayesian factor < 1, fail to reject h_0
+								<br>
+								Bayesian factor >= 1, reject h_0
+								<br>
+									Then we have the Bayesian Factor for each topic:
+									<br>
+									Topic 0: 1.1490791980975832 
+									<br>
+									Topic 1: 1.4238397602032118
+									<br>
+									Topic 2: 1.1347613804834755
+									<br> 
+									Topic 3: 1.1649544469999507
+									<br>	
+								As observed, since the Bayesian factors for all topics are all greater than 1, we reject the null hypothesis for all topics and thus accepting the alternative hypothesis and accepting these 4 topics as a topic for discussion about leni robredo's personal life.
+								<br>
+								To add, a greater Bayesian factor implies that the words in each topic have a higher posterior probability; implying that each topic is more connected each other. Additionally, if the sample size were to be increased, the effect would likely enhance the statistical power of the analysis. A larger sample size provides more data points, making the posterior probability more precise and reducing uncertainty and increasing the precision of the estimated Bayesian factors.</p>
 							</article>
 						</div>
 					</div>
