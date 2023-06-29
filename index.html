@@ -65,14 +65,15 @@
         			<div class="row aln-center">
 					<div class="col-5">
 						<section class="box style1" style="height: 100%; background-color: #F2D0D0; outline: 1px solid rgb(0, 0, 0);">
-							<h3 style="color: black; font-family: Sifonn; text-shadow: none;"><a href="#">Research Question</a></h3>
-							<p style="color: black; text-shadow: none;">What is the most common mis/disinformation regarding Leni Robredo and her personal life?</p>
+							<h3 style="color: black; font-family: Sifonn; text-shadow: none;"><a href="#">Research Objective</a></h3>
+							<p style="color: black; text-shadow: none;">To determine the most common mis/disinformation regarding Leni Robredo and her personal life.
+							</p>
 						</section>
 					</div>
 					<div class="col-5 col-5-medium col-12-small">
 						<article class="box style1" style="background-color: #F2D0D0; outline: 1px solid rgb(0, 0, 0);">
 							<h3 style="color: black; font-family: Sifonn; text-shadow: none;"><a href="#">Hypotheses</a></h3>
-							<p style="color: black; text-shadow: none;">Majority of fake news is about Leni Robredo's personal life.</p>
+							<p style="color: black; text-shadow: none;">There are no relevant themes to the tweets regarding Leni Robredo's personal life.</p>
 							<p>   </p>
 						</article>
 					</div>
@@ -85,7 +86,7 @@
 					<div class="col-5 col-5-medium col-12-small">
 						<article class="box style1" style="background-color: #F2D0D0; outline: 1px solid rgb(0, 0, 0);">
 							<h3 style="color: black; font-family: Sifonn;text-shadow: none;"><a href="#"> Null Hypotheses</a></h3>
-							<p style="color: black; text-shadow: none;">Not majority of fake news is about Leni Robredo's personal life.</p>
+							<p style="color: black; text-shadow: none;">There are relevant topics that are discussed in mis/disinformation regarding Leni Robredo's personal life.</p>
 							<p>   </p>
 							<p>   </p>
 							<p>   </p>
@@ -105,13 +106,13 @@
 					<div class="col-4 col-6-medium col-12-small">
 						<article class="box style2" style="background-color: #F2D0D0; outline: 1px solid rgb(0, 0, 0);">
 							<h3 style="font-family: Sifonn; color: black;"><a href="#">Data Collection</a></h3>
-							<p>We have collected a total of 141 valid tweets for this study.</p>
+							<p>We have collected a total of 141 valid tweets for this study. Some original tweets from the dataset were deleted as they were outliers, were unrelated, or had missing values. We mostly collected tweets about Leni Robredo's personal life, which can be found using related keywords on Twitter.</p>
 						</article>
 					</div>
 					<div class="col-4 col-6-medium col-12-small">
 						<article class="box style2" style="background-color: #F2D0D0; outline: 1px solid rgb(0, 0, 0);">
 							<h3 style="font-family: Sifonn; color: black;"><a href="#">Data Pre-processing</a></h3>
-							<p>Some issues in the dataset, including missing and/or invalid values and outliers were dealt with accordingly.</p>
+							<p>Some issues in the dataset, including missing and/or invalid values and outliers were dealt with accordingly. NLP techniques such as tokenization and lemmatization were incorporated to prepare the dataset for the machine learning model.</p>
 						</article>
 					</div>
 					<div class="col-4 col-6-medium col-12-small">
@@ -181,6 +182,18 @@
 								
 								<h3 style="color: black; text-shadow: none; font-family: Sifonn;">Categorical data encoding</h3>
 								<p style="color: black; text-shadow: none;">Some of the columns that are considered categorical data are the Content type and Account type columns. For the content type column, we have equated 1 for Emotional, 2 for Rational, and 3 for Transaction. On the other hand, we have equated 1 for Identified, 2 for Anonymous, and 3 for Media.
+								</p>
+							</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small", div style="margin-bottom: 20px;">
+							<section class="box style1" style="background-color: #F2D0D0; outline: 1px solid rgb(0, 0, 0);">
+								
+								<h3 style="color: black; text-shadow: none; font-family: Sifonn;">Natural language processing techniques</h3>
+								<p style="color: black; text-shadow: none;">
+									To further process the dataset for machine learning, several techniques in natural language processing were utilized. Lowercasing was done with the String library in Python. Aside from lowercasing, removal of emojis, emoticons, and hyperlinks were also done using the same library.
+									
+									Tokenization, stemming, and lemmatization. and stop word removal was done with the Natural Language Toolkit suite. Lemmatization was mostly done to the remaining words in the dataset to retain their meaning and ensure more accurate clusters.
+									
 								</p>
 							</section>
 						</div>
@@ -264,7 +277,13 @@
 							<article class="box style2">
 								<a class="image featured"><img src="ldagraph.png" alt="" /></a>
 								<h3 style="font-family: Sifonn; color: black;">TOPIC CLUSTERING</h3>
-								<p>Ornare nulla proin odio consequat.</p>
+								<p style="text-align: justify;">For topic clustering, we used Latent Dirichlet Allocation (LDA), which is a Bayesian model that gives a document a specific topic based on the words it contains. We decided with four topics as we wanted to see as it provided more consistent themes based on the tests that we have done. Moreover, these four topics were consistent with four major themes that have appeared in our data exploration: Aika Robredo’s rumored sex tape, her alleged affair with Bolet Banal, her said involvement with Jesse Robredo’s assassination, and Butch Robredo’s alleged drug trade.</p>
+								<ul style="text-align: left;">
+								<li>Topic 0: drug, lord, brother, butch, naga, brother-in-law, jesse, city, law, protector
+								<li>Topic 1: bolet, banal, affair, fake, child, said, make, relationship, married, supporter
+								<li>Topic 2: husband, drug, killed, wife, lord, bolet, first, npa, hiding, know
+								<li>Topic 3: video, sex, said, look, like, bolet, good, also, son, aika
+								</ul>
 							</article>
 						</div>
 						<div class="col-6 col-6-medium col-12-small">
@@ -276,7 +295,6 @@
 						</div>
 					</div>
 					<footer>
-						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
 					</footer>
 				</div>
 			</article>
